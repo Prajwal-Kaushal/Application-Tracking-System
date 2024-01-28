@@ -40,7 +40,7 @@ def input_pdf_setup(uploaded_file):
 
 ## Streamlit App
 
-st.set_page_config(page_title="ATS Resume EXpert")
+st.set_page_config(page_title="ATS Resume Expert")
 st.header("ATS Tracking System")
 input_text=st.text_area("Job Description: ",key="input")
 uploaded_file=st.file_uploader("Upload your resume(PDF)...",type=["pdf"])
@@ -58,12 +58,13 @@ submit3 = st.button("Percentage match")
 
 input_prompt1 = """
  You are an experienced Technical Human Resource Manager,your task is to review the provided resume against the job description. 
-  Please share your professional evaluation on whether the candidate's profile aligns with the role. 
+ You are experienced in the field of data science, full stack web development, big data engineering, devops, data analyst.
+ Please share your professional evaluation on whether the candidate's profile aligns with the role. 
  Highlight the strengths and weaknesses of the applicant in relation to the specified job requirements.
 """
 
 input_prompt3 = """
-You are a skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science and ATS functionality, 
+You are a skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science full stack web development, big data engineering, devops, data analyst and ATS functionality, 
 your task is to evaluate the resume against the provided job description. give me the percentage of match if the resume matches
 the job description. First the output should come as percentage and then keywords missing and last final thoughts.
 """
